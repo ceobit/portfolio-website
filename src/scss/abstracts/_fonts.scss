@@ -1,4 +1,5 @@
-@import "mixins";
+@import 'mixins';
 
-@include font-face("SF", "../vendor/fonts/SFMono/SFMonoRegular.otf", 400);
-
+@include font-face('SF', '../vendor/fonts/SFMono/SFMonoRegular.otf', 400);
+@include font-face('Calibre', '../vendor/fonts/Calibre/Calibre-Medium.eot', 600);
+@include font-face('Calibre', '../vendor/fonts/Calibre/Calibre-Regular.eot', 400);

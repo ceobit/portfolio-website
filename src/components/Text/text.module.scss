@@ -1,0 +1,46 @@
+@import '../../scss/abstracts/_abstracts-dir';
+
+.text {
+  font-weight: normal;
+  line-height: 21px;
+
+  &_fontSF {
+    font-family: 'SF', serif;
+  }
+
+  &_fontCalibre {
+    font-family: 'Calibre', serif;
+  }
+
+  &_extra-lg {
+    font-size: size(80);
+  }
+
+  &_md {
+    font-size: size(21);
+  }
+
+  &_sm {
+    font-size: size(14);
+  }
+
+  &_grey {
+    color: $grey;
+  }
+
+  &_navy {
+    color: $navy;
+  }
+
+  &_white {
+    color: $white;
+  }
+
+  &_defaultColor {
+    color: $fontColor;
+  }
+}
+
+.margin {
+  margin: 100px;
+}
