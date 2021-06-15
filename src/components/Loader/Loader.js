@@ -4,9 +4,13 @@ import Logo from '@assets/images/logo.png';
 import classes from './loader.module.scss';
 
 const Loader = () => {
-  const { loader } = classes;
+  const { loader, loader_position } = classes;
 
-  return <img className={loader} src={Logo} alt="logo" />;
+  return (
+    <div className={loader_position}>
+      <img src={Logo} alt="logo" className={loader} />
+    </div>
+  );
 };
 
 export default Loader;
