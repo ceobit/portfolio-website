@@ -1,0 +1,30 @@
+@import '../../scss/abstracts/_abstracts-dir';
+@import '../../scss/base/_base-dir';
+
+.button {
+  display: inline-block;
+  border: 1px solid $navy;
+  border-radius: 8px;
+  text-decoration: none;
+  background: $bgColor;
+  color: $navy;
+  text-align: center;
+  transition: all 0.2s;
+  font-family: 'SF', serif;
+  font-size: 1.05rem;
+  font-weight: bold;
+  line-height: 1.37rem;
+
+  &:hover {
+    filter: invert(10%);
+    cursor: pointer;
+  }
+
+  &_sm {
+    padding: 1.5% 1%;
+  }
+
+  &_lg {
+    padding: 1.3em 6.8em;
+  }
+}
