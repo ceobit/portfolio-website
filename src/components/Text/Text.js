@@ -3,17 +3,25 @@ import classNames from 'classnames';
 
 import classes from './text.module.scss';
 
-const Text = ({ size, color, family, children, ...props }) => {
-
+const Text = ({ size, color, family, weight, children, ...props }) => {
+  const width = props.width || '100%';
   const styles = {
-    margin: props.margin
-  }
+    width: width,
+    margin: props.margin,
+  };
 
   size = size || 'sm';
+  weight = weight || 'regular';
   family = family || 'fontSF';
   color = color || 'defaultColor';
 
-  const textClass = classNames(classes.text, classes[`text_${size}`], classes[`text_${color}`], classes[`text_${family}`]);
+  const textClass = classNames(
+    classes.text,
+    classes[`text_${size}`],
+    classes[`text_${color}`],
+    classes[`text_${family}`],
+    classes[`text_${weight}`],
+  );
 
   return (
     <div style={styles}>

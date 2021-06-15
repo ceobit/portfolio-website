@@ -1,8 +1,19 @@
 @import '../../scss/abstracts/_abstracts-dir';
 
 .text {
-  font-weight: normal;
-  line-height: 21px;
+  line-height: 30px;
+
+  &_regular {
+    font-weight: normal;
+  }
+
+  &_medium {
+    font-weight: 600;
+  }
+
+  &_bold {
+    font-weight: 700;
+  }
 
   &_fontSF {
     font-family: 'SF', serif;
@@ -17,7 +28,7 @@
   }
 
   &_md {
-    font-size: size(21);
+    font-size: size(26);
   }
 
   &_sm {
