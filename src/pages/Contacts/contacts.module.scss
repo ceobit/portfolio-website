@@ -1,0 +1,6 @@
+@import '../../scss/abstracts/_abstracts-dir';
+
+.contacts {
+  padding: 10% 10% 0 15%;
+  @include animation;
+}

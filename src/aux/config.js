@@ -13,7 +13,7 @@ const pages = [
   },
   {
     id: '04',
-    name: 'Contact',
+    name: 'Contacts',
   },
 ];
 
