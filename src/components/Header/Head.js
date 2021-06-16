@@ -6,6 +6,7 @@ import { pages as menuItems } from '@aux/config';
 
 import classes from './head.module.scss';
 import Button from '../Button/Button';
+import { history } from '../../history';
 
 const Head = () => {
   const { head, head_logo, head_list, head_list_number, head_item, head_nav, head_anim } = classes;
@@ -17,7 +18,7 @@ const Head = () => {
         <div className={head_nav}>
           <ul className={head_list}>
             {menuItems.map(({ name, id }) => (
-              <li key={id} className={head_item}>
+              <li key={id} className={head_item} onClick={()=>history.push(`/${name}`)}>
                 <span className={head_list_number}>{`${id}. `}</span>
                 {name}
               </li>

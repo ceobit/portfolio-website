@@ -1,0 +1,8 @@
+@import '../../scss/abstracts/_abstracts-dir';
+
+.intro {
+  &_anim {
+    padding: 10% 10% 0 15%;
+    @include animation;
+  }
+}

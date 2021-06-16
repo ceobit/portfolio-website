@@ -3,8 +3,11 @@
 .portfolio {
   padding: 5% 10%;
 
+  @include animation;
+
   &_project {
     display: flex;
+    margin-top: 3%;
   }
 
   &_img {

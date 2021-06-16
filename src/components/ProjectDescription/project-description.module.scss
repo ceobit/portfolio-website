@@ -1,14 +1,33 @@
 @import '../../scss/abstracts/_abstracts-dir';
 
-.description{
+.description {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: right;
   width: 50%;
+  &_right {
+    text-align: right;
+  }
+  &_left {
+    text-align: left;
+  }
+
+  &_links {
+    display: flex;
+    margin: 2%;
+    //justify-content: center;
+  }
+
+  &_social {
+    margin: 0 5%;
+
+    &:hover {
+      filter: drop-shadow(2px 2px 2px $navy);
+    }
+  }
 }
 
-.text_block{
+.text_block {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,5 +37,8 @@
   padding: 5%;
   text-align: left;
   border-radius: 5px;
-  transform: translateX(-70px);
+  z-index: 1;
+  &_right {
+    transform: translateX(-70px);
+  }
 }

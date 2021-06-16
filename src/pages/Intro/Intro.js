@@ -2,8 +2,8 @@ import React from 'react';
 import { CSSTransition } from 'react-transition-group';
 
 import styles from './intro.module.scss';
-import Text from '../Text/Text';
-import Button from '../Button/Button';
+import Text from '../../components/Text/Text';
+import Button from '../../components/Button/Button';
 
 const Intro = () => {
   const { intro, intro_anim } = styles;

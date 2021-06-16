@@ -1,14 +1,18 @@
 const pages = [
   {
     id: '01',
-    name: 'About',
+    name: 'Home',
   },
   {
     id: '02',
-    name: 'Portfolio',
+    name: 'About',
   },
   {
     id: '03',
+    name: 'Portfolio',
+  },
+  {
+    id: '04',
     name: 'Contact',
   },
 ];

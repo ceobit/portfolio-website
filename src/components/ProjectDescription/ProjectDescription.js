@@ -1,29 +1,38 @@
 import React from 'react';
+import classNames from 'classnames';
 
 import Text from '../Text/Text';
 import classes from './project-description.module.scss';
+import Icon from '../Icon/Icon';
 
-const ProjectDescription = () => {
-  const {description, text_block } = classes;
+const ProjectDescription = ({ name, stack, children, align, link }) => {
+  const { description, text_block, description_links, description_social } = classes;
+
+  const descriptionClass = classNames(description, classes[`description_${align}`]);
+
+  const textBlockClass = classNames(text_block, classes[`text_block_${align}`]);
 
   return (
-    <div className={description}>
+    <div className={descriptionClass}>
       <Text size="sm" color="navy">
         Featured Project
       </Text>
       <Text size="md" margin="1% 0" family="fontCalibre" weight="bold">
-        The movie library.
+        {name}
       </Text>
-      <div className={text_block}>
-        <Text size="sm" family='fontCalibre'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ducimus eaque, explicabo
-          laborum maiores molestiae officiis perspiciatis porro rerum saepe, tempore veritatis? Autem
-          cupiditate doloremque eum minus veniam. Mollitia, officiis.
+      <div className={textBlockClass}>
+        <Text size="sm" family="fontCalibre">
+          {children}
         </Text>
       </div>
-      <Text size="extra-sm" margin="2% 0" weight="bold" color='grey'>
-        Vanilla JS, SCSS, HTML
-      </Text>
+      <div className={description_links}>
+        <Text size="extra-sm" margin="0" weight="bold" color="grey">
+          {stack}
+        </Text>
+        <a className={description_social} href={link} target="_blank">
+          <Icon name="GitHub" />
+        </a>
+      </div>
     </div>
   );
 };
