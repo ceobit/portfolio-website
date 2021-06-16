@@ -6,7 +6,6 @@ import Work_first from '../../assets/images/work1.png';
 import Work_second from '../../assets/images/work2.png';
 import Work_third from '../../assets/images/work3.png';
 import ProjectDescription from '../../components/ProjectDescription/ProjectDescription';
-import Icon from '../../components/Icon/Icon';
 import { CSSTransition } from 'react-transition-group';
 
 const Portfolio = () => {

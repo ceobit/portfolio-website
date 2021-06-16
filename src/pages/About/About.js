@@ -4,7 +4,6 @@ import { CSSTransition } from 'react-transition-group';
 import Text from '../../components/Text/Text';
 import classes from './about.module.scss';
 import { techology } from '../../aux/config';
-import Photo from '../../assets/images/photo.png';
 
 const About = () => {
   const { about, about_text, about_list, about_list_item, about_photo, about_img } = classes;

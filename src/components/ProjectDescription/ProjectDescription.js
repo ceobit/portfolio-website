@@ -29,7 +29,7 @@ const ProjectDescription = ({ name, stack, children, align, link }) => {
         <Text size="extra-sm" margin="0" weight="bold" color="grey">
           {stack}
         </Text>
-        <a className={description_social} href={link} target="_blank">
+        <a className={description_social} href={link} target="_blank" rel="nofollow noopener noreferrer">
           <Icon name="GitHub" />
         </a>
       </div>

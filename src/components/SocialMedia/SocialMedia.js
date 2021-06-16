@@ -14,7 +14,7 @@ const SocialMedia = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const { social, social_item, social_anim } = classes;
+  const { social, social_item } = classes;
 
   return (
     <>
