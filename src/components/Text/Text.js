@@ -5,7 +5,10 @@ import classes from './text.module.scss';
 
 const Text = ({ size, color, family, weight, children, ...props }) => {
   const width = props.width || '100%';
+  const display = props.display || 'block';
+
   const styles = {
+    display: display,
     width: width,
     margin: props.margin,
   };
