@@ -1,14 +1,48 @@
 @import '../../scss/abstracts/_abstracts-dir';
 
 .about {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   padding: 10% 10% 0 15%;
 
-  //&:after {
-  //  content: '';
-  //  display: block;
-  //  width: 1px;
-  //  height: 150px;
-  //  margin: 0 auto;
-  //  background-color: $grey;
-  //}
+  &_text {
+    width: 50%;
+  }
+
+  &_list {
+    list-style-image: url('../../assets/images/checkmark.svg');
+    display: flex;
+    flex-wrap: wrap;
+    //width: 80%;
+    margin: 2% 0 0 2%;
+
+    &_item {
+      width: 30%;
+      margin: 1%;
+    }
+  }
+
+  &_photo {
+    height: 100%;
+    border: 5px solid $navy;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  &_img {
+    width: 400px;
+    height: 550px;
+    border-radius: 5px;
+    transform: translateY(-30px) translateX(-30px);
+    filter: grayscale(45%) contrast(1);
+    background: $navy url('../../assets/images/photo.png');
+    background-blend-mode: luminosity;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      background-blend-mode: normal;
+    }
+  }
 }

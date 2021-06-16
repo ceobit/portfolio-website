@@ -5,6 +5,7 @@ import Intro from './components/Intro/Intro';
 import Loader from './components/Loader/Loader';
 import SocialMedia from './components/SocialMedia/SocialMedia';
 import About from './pages/About/About';
+import Portfolio from './pages/Portfolio/Portfolio';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,6 +25,7 @@ function App() {
         <Head />
         {/*<Intro />*/}
         <About />
+        {/*<Portfolio />*/}
         <SocialMedia />
       </>
       {/*)}*/}

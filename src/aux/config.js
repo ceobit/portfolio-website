@@ -25,7 +25,34 @@ const socialMedia = [
   {
     name: 'Instagram',
     url: 'https://www.instagram.com/lebedenko_r/',
-  }
+  },
 ];
 
-export { pages, socialMedia };
+const techology = [
+  {
+    name: 'JavaScript',
+  },
+  {
+    name: 'TypeScript',
+  },
+  {
+    name: 'React js, +Redux',
+  },
+  {
+    name: 'Node js',
+  },
+  {
+    name: 'Express js',
+  },
+  {
+    name: 'MongoDB, MySQL',
+  },
+  {
+    name: 'HTML',
+  },
+  {
+    name: 'CSS',
+  },
+];
+
+export { pages, socialMedia, techology };
