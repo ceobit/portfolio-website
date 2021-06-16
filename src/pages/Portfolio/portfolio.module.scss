@@ -1,3 +1,27 @@
+@import '../../scss/abstracts/_abstracts-dir';
+
 .portfolio {
-  padding: 5% 10% 0 15%;
+  padding: 5% 10%;
+
+  &_project {
+    display: flex;
+  }
+
+  &_img {
+    margin-top: 3%;
+    width: 100%;
+    max-width: 1000px;
+    height: 574px;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 5px;
+    filter: grayscale(45%) contrast(1);
+    cursor: pointer;
+    border: 1px solid $navy;
+
+    &:hover {
+      filter: drop-shadow(3px 3px 3px $navy);
+      transform: scale(1.01);
+    }
+  }
 }

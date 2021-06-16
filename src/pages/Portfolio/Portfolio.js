@@ -2,9 +2,11 @@ import React from 'react';
 
 import Text from '../../components/Text/Text';
 import classes from './portfolio.module.scss';
+import Work_first from '../../assets/images/work1.png';
+import ProjectDescription from '../../components/ProjectDescription/ProjectDescription';
 
 const Portfolio = () => {
-  const { portfolio } = classes;
+  const { portfolio, portfolio_img, portfolio_project } = classes;
 
   return (
     <div className={portfolio}>
@@ -29,6 +31,10 @@ const Portfolio = () => {
       >
         Some things from me
       </Text>
+      <div className={portfolio_project}>
+        <img src={Work_first} className={portfolio_img} alt="work" />
+        <ProjectDescription />
+      </div>
     </div>
   );
 };

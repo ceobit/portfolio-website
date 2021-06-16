@@ -24,8 +24,8 @@ function App() {
       <>
         <Head />
         {/*<Intro />*/}
-        <About />
-        {/*<Portfolio />*/}
+        {/*<About />*/}
+        <Portfolio />
         <SocialMedia />
       </>
       {/*)}*/}

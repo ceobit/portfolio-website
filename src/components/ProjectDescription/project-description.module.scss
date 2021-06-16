@@ -1,0 +1,22 @@
+@import '../../scss/abstracts/_abstracts-dir';
+
+.description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  width: 50%;
+}
+
+.text_block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120%;
+  height: 30%;
+  background-color: $lightBlue;
+  padding: 5%;
+  text-align: left;
+  border-radius: 5px;
+  transform: translateX(-70px);
+}
