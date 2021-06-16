@@ -16,24 +16,16 @@ const pages = [
 const socialMedia = [
   {
     name: 'GitHub',
-    url: 'https://github.com/anmol098',
+    url: 'https://github.com/ceobit',
   },
   {
     name: 'Linkedin',
-    url: 'https://www.linkedin.com/in/anmol098',
-  },
-  {
-    name: 'Npm',
-    url: 'npx anmol',
+    url: 'https://www.linkedin.com/in/romanlebedenko/',
   },
   {
     name: 'Instagram',
-    url: 'https://www.instagram.com/misteranmol',
-  },
-  {
-    name: 'Twitter',
-    url: 'https://twitter.com/misteranmol',
-  },
+    url: 'https://www.instagram.com/lebedenko_r/',
+  }
 ];
 
 export { pages, socialMedia };

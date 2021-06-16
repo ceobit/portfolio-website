@@ -1,7 +1,14 @@
 import React from 'react';
 
 const IconLinkedin = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 430.117 430.117">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    role="img"
+    viewBox="0 0 430.117 430.117"
+    height="28"
+    width="28"
+    fill="#8892b0"
+  >
     <title>LinkedIn</title>
     <path
       d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707
