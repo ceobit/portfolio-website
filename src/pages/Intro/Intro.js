@@ -4,9 +4,16 @@ import { CSSTransition } from 'react-transition-group';
 import styles from './intro.module.scss';
 import Text from '../../components/Text/Text';
 import Button from '../../components/Button/Button';
+import { mailto } from '../../aux/config';
 
 const Intro = () => {
   const { intro, intro_anim } = styles;
+
+  const mailTo = (e) => {
+    window.location = mailto;
+    e.preventDefault();
+  };
+
   return (
     <CSSTransition className={intro_anim} timeout={1000} in={true}>
       <div className={intro}>
@@ -23,7 +30,7 @@ const Intro = () => {
           I'm a full-stack developer based in Hamburg. Goal oriented enthusiast with a can-do
           attitude and creative thinking.
         </Text>
-        <Button title="Get in touch" size="lg" />
+        <Button title="Get in touch" size="lg" handleButton={mailTo} />
       </div>
     </CSSTransition>
   );

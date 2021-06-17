@@ -4,9 +4,15 @@ import { CSSTransition } from 'react-transition-group';
 import Text from '../../components/Text/Text';
 import classes from './contacts.module.scss';
 import Button from '../../components/Button/Button';
+import { mailto } from '../../aux/config';
 
 const Contacts = () => {
   const { contacts } = classes;
+
+  const mailTo = (e) => {
+    window.location = mailto;
+    e.preventDefault();
+  };
 
   return (
     <CSSTransition className={contacts} timeout={1000} in={true}>
@@ -39,7 +45,7 @@ const Contacts = () => {
           I am currently looking for new opportunities. If you have any positions or questions just
           let me know.
         </Text>
-        <Button title="Get in touch" size="lg" />
+        <Button title="Get in touch" size="lg" handleButton={mailTo} />
       </div>
     </CSSTransition>
   );

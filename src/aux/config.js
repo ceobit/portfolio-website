@@ -59,4 +59,6 @@ const techology = [
   },
 ];
 
-export { pages, socialMedia, techology };
+const mailto = "mailto:ceobit90@gmail.com";
+
+export { pages, socialMedia, techology, mailto };

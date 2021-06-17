@@ -11,6 +11,10 @@ import { history } from '../../history';
 const Head = () => {
   const { head, head_logo, head_list, head_list_number, head_item, head_nav, head_anim } = classes;
 
+  const openResume = () => {
+    window.open('https://www.dropbox.com/s/cazioza3kpvlxte/Roman%20Lebedenko_cv.pdf?dl=0');
+  };
+
   return (
     <CSSTransition className={head_anim} timeout={300} in={true}>
       <div className={head}>
@@ -18,13 +22,13 @@ const Head = () => {
         <div className={head_nav}>
           <ul className={head_list}>
             {menuItems.map(({ name, id }) => (
-              <li key={id} className={head_item} onClick={()=>history.push(`/${name}`)}>
+              <li key={id} className={head_item} onClick={() => history.push(`/${name}`)}>
                 <span className={head_list_number}>{`${id}. `}</span>
                 {name}
               </li>
             ))}
           </ul>
-          <Button title="Resume" size="sm" />
+          <Button title="Resume" size="sm" handleButton={openResume} />
         </div>
       </div>
     </CSSTransition>
