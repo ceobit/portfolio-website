@@ -2,8 +2,7 @@
 
 .about {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  @include flex(space-between);
   padding: 10% 10% 0 15%;
 
   @include animation;
@@ -30,7 +29,7 @@
     height: 100%;
     border: 5px solid $navy;
     border-radius: 5px;
-    transition: 0.3s;
+    transition: $transition;
   }
 
   &_img {
@@ -46,9 +45,11 @@
     background-blend-mode: luminosity;
     cursor: pointer;
     transition: $transition;
+    overflow: hidden;
 
     &:hover {
-      background-blend-mode: normal;
+      background-color: transparent;
+      transition: $transition;
     }
   }
 }

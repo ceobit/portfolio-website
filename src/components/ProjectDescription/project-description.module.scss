@@ -1,9 +1,7 @@
 @import '../../scss/abstracts/_abstracts-dir';
 
 .description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include flex(center,normal,column);
   width: 50%;
   &_right {
     text-align: right;
@@ -15,7 +13,6 @@
   &_links {
     display: flex;
     margin: 2%;
-    //justify-content: center;
   }
 
   &_social {
@@ -28,9 +25,7 @@
 }
 
 .text_block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(center,center,row);
   width: 120%;
   height: 30%;
   background-color: $lightBlue;

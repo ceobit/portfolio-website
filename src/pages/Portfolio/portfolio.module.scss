@@ -21,10 +21,12 @@
     filter: grayscale(45%) contrast(1);
     cursor: pointer;
     border: 1px solid $navy;
+    transition: $transition;
 
     &:hover {
       filter: drop-shadow(3px 3px 3px $navy);
       transform: scale(1.01);
+      transition: $transition;
     }
   }
 }
