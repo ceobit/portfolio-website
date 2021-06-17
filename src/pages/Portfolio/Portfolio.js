@@ -9,7 +9,7 @@ import ProjectDescription from '../../components/ProjectDescription/ProjectDescr
 import { CSSTransition } from 'react-transition-group';
 
 const Portfolio = () => {
-  const { portfolio, portfolio_img, portfolio_project } = classes;
+  const { portfolio, portfolio_img, portfolio_project, portfolio_project_position } = classes;
 
   return (
     <CSSTransition className={portfolio} timeout={300} in={true}>

@@ -63,3 +63,57 @@
 .margin {
   margin: 100px;
 }
+
+@media (max-width: 1199.98px) {
+  .text {
+    &_extra-lg {
+      font-size: size(70);
+      line-height: 48px;
+    }
+
+    &_lg {
+      font-size: size(40);
+      line-height: 45px;
+    }
+
+    &_md {
+      font-size: size(26);
+    }
+
+    &_sm {
+      font-size: size(16);
+      line-height: 20px;
+    }
+
+    &_extra-sm {
+      font-size: size(12);
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .text {
+    &_extra-lg {
+      font-size: size(70);
+      line-height: 48px;
+    }
+
+    &_lg {
+      font-size: size(36);
+      line-height: 45px;
+    }
+
+    &_md {
+      font-size: size(22);
+    }
+
+    &_sm {
+      font-size: size(14);
+      line-height: 20px;
+    }
+
+    &_extra-sm {
+      font-size: size(12);
+    }
+  }
+}

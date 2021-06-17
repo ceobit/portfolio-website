@@ -2,7 +2,7 @@
 
 .description {
   @include flex(center,normal,column);
-  width: 50%;
+  //width: 50%;
   &_right {
     text-align: right;
   }
@@ -35,5 +35,28 @@
   z-index: 1;
   &_right {
     transform: translateX(-70px);
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .description {
+  }
+
+  .text_block {
+    width: 170%;
+    height: 20%;
+    transform: translateX(-140px);
+  }
+}
+
+@media (max-width: 900px) {
+  .description {
+    order: 1;
+  }
+
+  .text_block {
+    width: 60%;
+    height: 20%;
+    transform: translateX(0);
   }
 }
