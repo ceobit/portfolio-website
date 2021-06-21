@@ -43,9 +43,10 @@ const Portfolio = () => {
             align="right"
             link="https://github.com/ceobit/TMDB-movie-library"
           >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ducimus eaque,
-            explicabo laborum maiores molestiae officiis perspiciatis porro rerum saepe, tempore
-            veritatis? Autem cupiditate doloremque eum minus veniam. Mollitia, officiis.
+            This is a web application for searching movies. It uses the TMDB API.
+            Using this application you can search for movies by title, save your favorite movies to a selection,
+            as well as put a personal rating.
+            This is the first group project during the Digital Career Institute.
           </ProjectDescription>
         </div>
         <div className={portfolio_project}>
@@ -55,9 +56,10 @@ const Portfolio = () => {
             align="left"
             link="https://github.com/ceobit/Work-Time-tracking"
           >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ducimus eaque,
-            explicabo laborum maiores molestiae officiis perspiciatis porro rerum saepe, tempore
-            veritatis? Autem cupiditate doloremque eum minus veniam. Mollitia, officiis.
+            This is a fullstack timekeeping application.
+            After registration and authorization,
+            you can start a timer for the task, summarize the day. Use filters and charts.
+            Data is stored in a database.
           </ProjectDescription>
           <img src={Work_second} className={portfolio_img} alt="work" />
         </div>
@@ -69,9 +71,9 @@ const Portfolio = () => {
             align="right"
             link="https://github.com/ceobit/instagram-clone"
           >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ducimus eaque,
-            explicabo laborum maiores molestiae officiis perspiciatis porro rerum saepe, tempore
-            veritatis? Autem cupiditate doloremque eum minus veniam. Mollitia, officiis.
+            Youtube clone app.
+            I implemented this project while studying at the Digital Career Institute.
+            Built to practice responsive layout. Used flex and grid.
           </ProjectDescription>
         </div>
       </div>
