@@ -1,6 +1,7 @@
 @import '../../scss/abstracts/_abstracts-dir';
 
 .description {
+  margin: 0 3%;
   @include flex(center,normal,column);
   //width: 50%;
   &_right {
@@ -26,7 +27,7 @@
 
 .text_block {
   @include flex(center,center,row);
-  width: 120%;
+  width: 150%;
   height: 30%;
   background-color: $lightBlue;
   padding: 5%;
@@ -34,7 +35,7 @@
   border-radius: 5px;
   z-index: 1;
   &_right {
-    transform: translateX(-70px);
+    transform: translateX(-150px);
   }
 }
 
@@ -43,7 +44,7 @@
   }
 
   .text_block {
-    width: 170%;
+    width: 220%;
     height: 20%;
     transform: translateX(-140px);
   }

@@ -3,7 +3,7 @@
 .about {
   width: 100%;
   @include flex(space-between);
-  padding: 10% 10% 0 15%;
+  padding: 5% 10% 0 15%;
 
   @include animation;
 
@@ -96,6 +96,31 @@
     &_img {
       margin-top: 7%;
       height: 400px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    &_photo {
+      margin-top: 7%;
+      width: 220px;
+      height: 100%;
+    }
+    &_img {
+      margin-top: 7%;
+      height: 400px;
+      object-fit: cover;
+      object-position: bottom;
+    }
+
+    &_list {
+      margin: 2% 0 0 3%;
+
+      &_item {
+        width: 40%;
+        margin: 1%;
+      }
     }
   }
 }

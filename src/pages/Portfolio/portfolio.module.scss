@@ -1,7 +1,7 @@
 @import '../../scss/abstracts/_abstracts-dir';
 
 .portfolio {
-  padding: 5% 10%;
+  padding: 5% 1%;
 
   @include animation;
 
@@ -34,7 +34,7 @@
 
 @media (max-width: 1199.98px) {
   .portfolio {
-    padding: 5% 1%;
+    //padding: 5% 1%;
     &_img {
       margin-top: 0;
       width: calc(100% - 200px);
