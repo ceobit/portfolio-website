@@ -27,7 +27,7 @@
 
 .text_block {
   @include flex(center,center,row);
-  width: 150%;
+  width: 135%;
   height: 30%;
   background-color: $lightBlue;
   padding: 5%;
