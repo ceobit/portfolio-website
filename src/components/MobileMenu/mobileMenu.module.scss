@@ -1,0 +1,30 @@
+@import '../../scss/abstracts/_abstracts-dir';
+
+.mobileMenu {
+  @include flex(space-between, center, column);
+  background-color: $bgColor;
+  height: 100%;
+  width: 100%;
+  margin-top: 10vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  &_list {
+    list-style: none;
+    cursor: pointer;
+
+    &_number {
+      color: $navy;
+    }
+  }
+
+  &_item {
+    padding-top: 20%;
+    font-size: 40px;
+    &:hover {
+      color: $navy;
+    }
+  }
+}

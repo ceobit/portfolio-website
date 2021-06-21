@@ -52,11 +52,13 @@
 @media (max-width: 900px) {
   .description {
     order: 1;
+    text-align: left;
   }
 
   .text_block {
-    width: 60%;
+    width: 70%;
     height: 20%;
+    padding: 2%;
     transform: translateX(0);
   }
 }

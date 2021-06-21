@@ -52,8 +52,9 @@
     }
     &_img {
       margin-top: 0;
-      width: calc(100% - 200px);
+      width: 100%;
       height: 574px;
+      object-position: top;
       order: 2;
     }
   }
